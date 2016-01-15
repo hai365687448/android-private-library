@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout
+    android:id="@+id/slidingpanellayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/leftrl"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:background="#008745"
+        android:tag="LEFT">
+
+        <TextView
+            android:id="@+id/right_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="个人登陆页面"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#83CC39">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人登陆页面"/>
+    </RelativeLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>

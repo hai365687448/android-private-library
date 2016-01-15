@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.yjn.mydemo"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PercentActivity" android:theme="@style/AppTheme2">
+        </activity>
+        <activity android:name=".SlidingPaneActivity">
+        </activity>
+        <activity android:name=".DrawerLayoutActivity">
+        </activity>
+        <activity android:name=".AnimationActivity" >
+        </activity>
+        <activity android:name=".FloatingActionButtonActivity">
+        </activity>
+        <activity android:name=".CollapsingToolbarLayoutActivity">
+        </activity>
+        <activity android:name=".TextInputLayoutActivity">
+        </activity>
+        <activity android:name=".SlidrActivity">
+        </activity>
+        <activity android:name=".SwipeBackActivity">
+        </activity>
+        <activity android:name=".DraggerActivity">
+        </activity>
+        <activity android:name=".AdvRecyclerviewActivity">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

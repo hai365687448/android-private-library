@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@drawable/icon_wh_70_back"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textStyle="bold"/>-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="240dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:gravity="center"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="主页"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textStyle="bold"/>-->
+            <!--</RelativeLayout>-->
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/yellow"
+            android:layout_height="?attr/actionBarSize"/>
+        <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--app:tabGravity="center"-->
+        <!--app:tabIndicatorColor="#FF00FF00"-->
+        <!--app:tabMode="scrollable"-->
+        <!--app:tabSelectedTextColor="#FF00FF00"-->
+        <!--app:tabTextColor="#FF000000"/>-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/viewpager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rvToDoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@mipmap/ic_launcher"
+        app:backgroundTint="#00000000"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/rvToDoList"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_behavior="com.yjn.mydemo.control.ScrollAwareFABBehavior"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="#ffffff"/>
+
+    <!--底部操作栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_behavior="com.yjn.mydemo.control.FooterBehavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="添加你的评论"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

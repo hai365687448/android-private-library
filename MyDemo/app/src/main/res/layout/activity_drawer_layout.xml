@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#83CC39">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="个人登陆页面"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:tag="LEFT">
+
+        <ListView
+            android:id="@+id/left_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@android:color/white"
+        android:tag="RIGHT">
+
+        <TextView
+            android:id="@+id/right_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="个人登陆页面"/>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
